@@ -1,0 +1,42 @@
+body {
+    
+}
+
+body {
+    background:
+        url("https://cdn.discordapp.com/attachments/465318855783219201/514113129722937344/panda_greyscale.png")
+        no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.character_list {
+    background-color: rgba(102, 42, 46, 0.8);
+}
+
+.account_name {
+    background-color: rgba(102, 42, 46, 0.8);
+}
+
+.logout {
+    background-color: rgba(102, 42, 46, 0.8);
+}
+
+.logout:hover {
+    background-color: rgba(132, 39, 39, 0.8);
+}
+
+.logout:active {
+    background-color: rgba(226, 68, 68, 0.8);
+    color: #FFFFFF;
+}
+
+.border_top {
+    background-color: rgba(102, 42, 46, 0.8);
+}
+
+.border_bottom {
+    background-color: rgba(102, 42, 46, 0.8);
+}

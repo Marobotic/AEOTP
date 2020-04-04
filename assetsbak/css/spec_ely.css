@@ -1,0 +1,9 @@
+body {}
+
+body {
+    background: url(https://cdn.discordapp.com/attachments/465318855783219201/514118281200795649/sanctum_greyscale.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

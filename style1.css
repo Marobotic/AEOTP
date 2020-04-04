@@ -1,0 +1,2757 @@
+             html {
+                 min-height: 100%;
+             }
+
+             body {
+                 background: url(https://www.aioneotp.com/assets/images/background_001.jpg) no-repeat center center fixed;
+                 -webkit-background-size: cover;
+                 -moz-background-size: cover;
+                 -o-background-size: cover;
+                 background-size: cover;
+             }
+
+             img {
+                 user-drag: none;
+                 user-select: none;
+                 -moz-user-select: none;
+                 -webkit-user-drag: none;
+                 -webkit-user-select: none;
+                 -ms-user-select: none;
+             }
+
+             li {
+                 font-family: vera;
+                 font-size: 15px;
+                 color: #dcc5a5;
+                 text-align: left;
+             }
+
+             .left_p {
+                 text-align: left;
+             }
+
+             .colored_button {
+                 height: 50px;
+                 font-size: 25px;
+                 outline: 0;
+                 background: 0;
+                 border: 0;
+                 background-color: #9c9c9c;
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+             }
+             .colored_button:hover{
+              font-size: 35px;
+               background-image: url("https://cdn.discordapp.com/attachments/484327756080087050/595191393060782080/unknown.png");
+             }
+
+             .stack_container {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 width: 400px;
+
+             }
+
+             .profile_container {
+                 background-color: rgba(49, 39, 44, 0.6);
+                 padding: 30px;
+                 border: 3px;
+                 border-color: #dcc5a5;
+                 border-style: solid;
+                 border-radius: 10px;
+                 flex-direction: column;
+                 width: 590px;
+             }
+
+             .characters_button {
+                 background: 0;
+                 outline: 0;
+                 border: 0;
+                 text-align: center;
+                 margin-top: 6px;
+                 font-size: 30px;
+                 font-family: ferrum;
+                 color: #dcc5a5;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+
+             }
+
+             .stack_button {
+                 height: 50px;
+                 outline: 0;
+                 border: 0;
+                 cursor: pointer;
+                 text-decoration: none;
+                 padding: 18px;
+                 padding-left: 110px;
+                 padding-right: 110px;
+             }
+
+             .title {
+
+                 font-size: 20px;
+             }
+
+             .stack {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+             }
+
+             .data_container {
+                 color: #FFFFFF;
+                 width: 100%;
+                 background-color: rgba(66, 10, 10, 0.9);
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+
+             }
+
+             .data_container:hover {
+                 box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+             }
+
+
+             .stack:hover {}
+
+
+             .donation_buttons {}
+
+             .reward_list {
+                 display: flex;
+                 flex-wrap: wrap;
+             }
+
+             .command_parent_div {
+                 display: flex;
+                 justify-content: center;
+                 flex-direction: column;
+                 flex-wrap: nowrap;
+                 overflow: hidden;
+                 width: 800px;
+
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                 -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+             }
+
+
+
+             .command_parent_container {
+                 display: flex;
+
+                 flex-wrap: wrap;
+                 justify-content: center;
+                 width: auto;
+
+             }
+
+             .command_name {
+                 font-size: 21px;
+                 background: 0;
+                 border: 0;
+                 outline: 0;
+                 color: #dcc5a5;
+                 margin-bottom: 7px;
+
+             }
+
+             .explaination_command {
+                 font-size: 16px;
+                 width: 400px;
+                 height: 100px;
+                 background: 0;
+                 border: 0;
+                 outline: 0;
+                 color: #dcc5a5;
+                 margin-bottom: 30px;
+                 background-color: rgba(66, 10, 10, 0.8);
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+             }
+
+             .explaination_command:hover {
+                 background: url("../../assets/images/background_000.jpg") no-repeat fixed center;
+                 background-size: 100%;
+                 box-shadow: 0px 0px 20px 7px #101010;
+
+             }
+
+             .description {
+                 margin-top: 100px;
+                 text-align: left;
+
+             }
+
+             .news_navigation_buttons {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+                 margin-bottom: 30px;
+                 justify-content: center;
+
+
+             }
+
+             .card_button {
+                 width: 356px;
+                 height: auto;
+                 padding-top: 10px;
+                 padding-bottom: 10px;
+                 left: 0;
+                 position: absolute;
+                 background: rgba(0, 0, 0, 0.8);
+                 color: rgba(255, 255, 255, 0.8);
+                 margin-bottom: 40px;
+
+             }
+
+             label {
+                 display: inline-block;
+                 width: 200px;
+                 text-align: right;
+                 color: #dcc5a5;
+                 font-family: vera;
+                 font-size: 15px;
+             }
+
+             .mid_window {}
+
+             .register_Window {
+                 width: 900px;
+                 height: auto;
+             }
+
+             .main_big_window {
+
+                 flex-direction: column;
+                 width: 850px;
+             }
+
+             .big_window {
+                 background-color: rgba(49, 39, 44, 0.6);
+                 padding: 30px;
+                 border: 3px;
+                 border-color: #dcc5a5;
+                 border-style: solid;
+                 border-radius: 10px;
+                 flex-direction: column;
+                 width: 590px;
+
+             }
+
+             .help_container {
+                 display: flex;
+                 flex-direction: row;
+                 margin-bottom: 50px;
+                 flex-wrap: wrap;
+                 justify-content: center;
+             }
+
+             .features_cards {
+                 display: block;
+                 background-color: rgba(66, 10, 10, 0.8);
+                 color: #000000;
+                 width: 350px;
+                 padding: 3px;
+                 margin: 10px;
+                 position: relative;
+                 height: 45px;
+                 padding-bottom: 55px;
+                 overflow: hidden;
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                 -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+             }
+
+             .starter_guide_button {
+                 margin-bottom: 5px;
+                 margin-left: 5px;
+                 min-width: 240px;
+                 height: 70px;
+                 border: 0;
+                 outline: 0;
+                 font-family: ferrum;
+                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                 background-color: rgba(66, 10, 10, 0.9);
+                 font-size: 25px;
+                 border: 3px;
+                 border-color: #dcc5a5;
+                 color: #dcc5a5;
+             }
+
+             .starter_guide_button:hover {
+
+                 height: 75px;
+                 background-color: rgba(0, 0, 0, 0.6);
+                 background: url("../../assets/images/background_000.jpg") no-repeat fixed center;
+                 background-size: 100%;
+                 font-size: 23px;
+                 color: #EFEFEF;
+                 box-shadow: 0px 0px 20px 7px #101010;
+             }
+
+
+             .big_text {
+                 font-family: ferrum;
+                 color: #dcc5a5;
+                 font-size: 35px;
+             }
+
+             .medium_text {
+                 font-family: ferrum;
+                 color: #dcc5a5;
+                 font-size: 19px;
+             }
+
+
+             p {
+                 /* text-shadow: 2px 2px #000000;*/
+                 color: #dcc5a5;
+             }
+
+             a {
+                 text-decoration: none;
+             }
+
+
+             @font-face {
+                 font-family: banb;
+                 src: url(https://www.aioneotp.com/assets/fonts/banb.ttf);
+             }
+
+             @font-face {
+                 font-family: hansrf;
+                 src: url(https://www.aioneotp.com/assets/fonts/hansrf.ttf);
+             }
+
+             @font-face {
+                 font-family: vera;
+                 src: url(https://www.aioneotp.com/assets/fonts/vera.ttf);
+             }
+
+
+             @font-face {
+                 font-family: ferrum;
+                 src: url(https://www.aioneotp.com/assets/fonts/ferrum.otf);
+             }
+
+             @font-face {
+                 font-family: Klavika;
+                 src: url(https://www.aioneotp.com/assets/fonts/Klavika Bold.otf.otf);
+             }
+
+             features_cards {
+                 display: block;
+                 background-color: rgba(255, 255, 255, 0.8);
+                 color: #000000;
+                 width: 350px;
+                 padding: 3px;
+                 margin: 10px;
+                 position: relative;
+                 height: 45px;
+                 padding-bottom: 55px;
+                 overflow: hidden;
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                 -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+             }
+
+             .features_cards:hover {
+
+                 height: 200px;
+                 background: url(../../assets/images/background_000.jpg) no-repeat fixed center;
+             }
+
+             .features_parent {
+                 width: 1200px;
+                 flex-direction: row;
+                 display: flex;
+                 justify-content: center;
+             }
+
+             .features_container {
+                 display: flex;
+                 flex-direction: column;
+
+
+                 flex-wrap: wrap;
+
+             }
+
+
+             .news {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+             }
+
+             .inside_box_container {
+                 position: absolute;
+                 justify-content: center;
+                 flex-direction: column;
+
+             }
+
+             .top_menu_buttons {
+                 color: #FFFFFF;
+                 background-color: #383737;
+                 opacity: 0.5;
+                 height: 70px;
+                 transform: scale(0.8);
+                 overflow: hidden;
+             }
+
+             .top_menu_buttons:hover {
+                 opacity: 1
+             }
+
+             .webkit_fix {
+                 flex-direction: column;
+                 background: url(https://www.aioneotp.com/assets/images/account_interface_blank.png) no-repeat;
+                 */background-size: 100%;
+                 background-size: contain;
+                 width: 325px;
+                 margin-top: 15px;
+                 margin-left: 10px;
+             }
+
+             .button {
+                 font-size: 25px;
+                 border: 0;
+                 outline: 0;
+                 background: 0;
+                 width: 200px;
+                 height: 60px;
+                 color: #FFFFFF;
+                 margin-top: 5px;
+             }
+
+             .button:hover {
+                 background-color: #565656;
+             }
+
+             .button:active {
+                 background-color: #848484;
+                 color: #000000;
+             }
+
+
+
+             .inner-container {
+                 display: block;
+                 width: 1000px;
+                 height: auto;
+                 margin-bottom: 0px;
+                 margin-left: auto;
+                 margin-right: auto;
+                 margin-top: 125px;
+                 align-items: center;
+                 justify-content: center;
+             }
+
+             .inner-container2 {
+                 display: block;
+                 width: 1000px;
+                 height: auto;
+                 margin-bottom: 0px;
+                 margin-left: auto;
+                 margin-right: auto;
+                 align-items: center;
+                 justify-content: center;
+             }
+
+             .flex-container {
+                 display: flex;
+                 flex-wrap: nowrap;
+                 font-family: hansrf;
+                 margin-top: -140px;
+                 display: -webkit-box;
+                 /* background of the main menu here*/
+             }
+
+             .menu_buttons {
+                 /* margin-top: 125px;*/
+                 display: flex;
+                 justify-content: center;
+                 flex-wrap: nowrap;
+                 width: auto;
+                 overflow-x: none;
+             }
+
+             .menu_buttons>div {
+
+                 flex-shrink: 0;
+                 margin-bottom: 25px
+             }
+
+
+
+             .butt {
+                 background-image: url("https://www.aioneotp.com/assets/images/red_button.png");
+                 width: 200px;
+                 height: 57px;
+                 background-repeat: no-repeat;
+                 text-align: center;
+                 font-size: 2em;
+                 justify-content: center;
+                 flex-wrap: nowrap;
+                 padding-top: 9px;
+                 background-size: 100%;
+                 text-shadow: 2px 2px #000000;
+                 font-family: ferrum;
+                 color: #dcc5a5;
+                 cursor: pointer;
+             }
+
+             .butt:hover {
+                 background-image: url("https://www.aioneotp.com/assets/images/red_button_moused_over.png");
+                 cursor: pointer;
+                 text-shadow: 2px 2px #000000;
+             }
+
+
+             .butt:active {
+                 background-image: url("https://www.aioneotp.com/assets/images/red_button_pressed.png");
+                 text-shadow: 2px 2px #000000;
+             }
+
+             .butt:disabled {
+                 background-image: url("https://www.aioneotp.com/assets/images/red_button_broken.png");
+             }
+
+             .butt2 {
+                 background-image: url("https://www.aioneotp.com/assets/images/green_button.png");
+                 width: 200px;
+                 height: 57px;
+                 background-repeat: no-repeat;
+                 text-align: center;
+                 font-size: 2em;
+                 justify-content: center;
+                 flex-wrap: nowrap;
+                 padding-top: 9px;
+                 background-size: 100%;
+                 text-shadow: 2px 2px #000000;
+                 font-family: ferrum;
+                 color: #dcc5a5;
+                 cursor: pointer;
+             }
+
+             .butt2:hover {
+                 background-image: url("https://www.aioneotp.com/assets/images/green_button_moused_over.png");
+                 text-shadow: 2px 2px #000000;
+                 cursor: pointer;
+             }
+
+             .butt2:active {
+                 background-image: url("https://www.aioneotp.com/assets/images/green_button_pressed.png");
+                 text-shadow: 2px 2px #000000;
+             }
+
+             .butt2:disabled {
+                 background-image: url("https://www.aioneotp.com/assets/images/red_button_broken.png");
+                 text-shadow: 2px 2px #000000;
+             }
+
+             .flux {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 margin-left: 4px;
+                 width: 675px;
+             }
+
+             .flux img {
+                 text-align: center;
+             }
+
+             .one {
+                 height: auto;
+                 width: 667px;
+             }
+
+             .two {
+                 height: auto;
+                 width: 667px;
+             }
+
+             .changelog_mid_image {
+                 height: 1600px;
+                 width: 987px;
+             }
+
+             .overflow_changelog {
+                 /*overflow-y: auto;*/
+                 max-height: 1550px;
+                 width: 800px;
+             }
+
+
+             .overflow_changelog2 {
+                 /*overflow-y: auto;*/
+                 max-height: 750px;
+             }
+
+             .one6 {
+                 height: auto;
+                 width: 820px;
+             }
+
+             .two6 {
+                 height: auto;
+                 width: 820px;
+             }
+
+             .drafts_mid_image {
+                 height: 840px;
+                 width: 820px;
+             }
+
+             .community_mid_div {
+                 height: 870px;
+                 width: 987px;
+             }
+
+             .main_menu {
+                 height: 500px;
+                 width: 667px;
+             }
+
+             .downloads_mid_image {
+                 height: 470px;
+                 width: 987px;
+             }
+
+             .register_mid_div {
+                 height: 300px;
+                 width: 600px;
+             }
+
+             .three {
+                 height: 680px;
+                 width: 667px;
+             }
+
+             .schedule_mid_image {
+                 height: 700px;
+                 width: 987px;
+             }
+
+             .features_mid_div {
+                 height: 2900px;
+                 width: 987px;
+             }
+
+
+             .admin_ticket_image {
+                 height: 1650px;
+                 width: 987px;
+             }
+
+             .donate_mid_image {
+                 height: 200px;
+                 width: 987px;
+             }
+
+             .guidelines_mid_image {
+                 height: 1800px;
+                 width: 987px;
+             }
+
+             .ticket_special {
+                 /*   width:100%;*/
+                 overflow: hidden;
+             }
+
+             .flux2 {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+
+
+
+             }
+
+             .flux2 image {
+                 text-align: center;
+             }
+
+             .flux_main {
+                 display: flex;
+                 flex-direction: row-reverse;
+                 justify-content: center;
+                 margin-top: -20px;
+             }
+
+             .flux3 {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 margin-right: 4px;
+                 width: 325px;
+             }
+
+             .flux3_loggedin {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 margin-right: 4px;
+                 width: 325px;
+                 margin-top: -70px;
+             }
+
+             .one2 {
+                 height: auto;
+                 width: 317px;
+             }
+
+             .two2 {
+                 height: auto;
+                 width: 317px;
+             }
+
+             .three2 {
+                 height: 250px;
+                 width: 317px;
+             }
+
+
+             .logo {
+                 width: 450px;
+                 height: auto;
+                 content: url("https://www.aioneotp.com/assets/images/logo.png");
+                 opacity: 1;
+                 position: absolute;
+             }
+
+             .logo:hover {
+                 opacity: 0;
+             }
+
+             .container {
+                 cursor: pointer;
+                 font-size: 12px;
+                 -webkit-user-select: none;
+                 -moz-user-select: none;
+                 -ms-user-select: none;
+                 user-select: none;
+                 color: #dcc5a5;
+
+             }
+
+
+
+             .logo_div {
+                 background-image: url("https://www.aioneotp.com/assets/images/eotp.png");
+                 background-size: contain;
+                 height: 120px;
+                 width: 400px;
+                 background-repeat: no-repeat;
+                 cursor: pointer;
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+             }
+
+             .logo_div:hover {
+                 background-image: url("https://www.aioneotp.com/assets/images/eotp_hovered.png");
+
+             }
+
+             .top_logo_container {}
+
+             .logo_link_container {
+                 justify-content: center;
+                 margin-left: auto;
+                 margin-right: auto;
+                 margin-bottom: 100px;
+             }
+
+             .logo_pressed {
+                 opacity: 0;
+                 width: 450px;
+                 height: auto;
+                 position: absolute;
+                 margin-left: auto;
+                 margin-right: auto;
+             }
+
+             .logo_pressed:hover {
+                 opacity: 1;
+                 margin-left: auto;
+                 margin-right: auto;
+             }
+
+             .side_thingy {}
+
+             .buttons {
+                 position: absolute;
+                 padding-top: 46px;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+             .buttons2 {
+                 padding-top: 46px;
+                 display: flex;
+                 flex-direction: column;
+
+             }
+
+             .Login_details {
+
+
+                 flex-direction: column;
+                 justify-content: center;
+             }
+
+             .login_container {}
+
+             .register {
+                 width: 270px;
+                 height: 35px;
+                 padding: 2px 8px;
+                 border: none;
+                 background: url(https://www.aioneotp.com/assets/images/register_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 color: #9affb9;
+                 margin-top: 2px;
+             }
+
+             .login {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/login_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+             }
+
+             .download {
+                 width: 270px;
+                 height: 35px;
+                 border: none;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/download_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+             }
+
+             .register:hover {
+                 background: url(https://www.aioneotp.com/assets/images/register_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .login:hover {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .download:hover {
+                 background: url(https://www.aioneotp.com/assets/images/download_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+
+             .register:active {
+                 background: url(https://www.aioneotp.com/assets/images/register_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .login:active {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .download:active {
+                 background: url(https://www.aioneotp.com/assets/images/download_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .papyrus {
+                 width: 334px;
+                 height: 195px;
+                 /*    content: url("https://www.aioneotp.com/assets/images/papyrus_field_down.png");*/
+             }
+
+             .papyrus_open {
+                 width: 334px;
+                 height: 195px;
+                 /*    content: url("https://www.aioneotp.com/assets/images/papyrus_field_up2.png");*/
+             }
+
+             .papyrus_close {
+                 position: absolute;
+                 background: url("https://www.aioneotp.com/assets/images/papyrus_field_up_button.png") no-repeat;
+                 background-size: contain;
+                 width: 330px;
+                 height: 70px;
+                 outline: 0;
+                 margin-right: 20px;
+                 border: none;
+             }
+
+
+             .papyrus_close:hover {
+                 background: url("https://www.aioneotp.com/assets/images/papyrus_field_up_button_hover.png") no-repeat;
+                 background-size: contain;
+                 width: 330px;
+                 height: 100px;
+                 outline: 0;
+                 margin-right: 20px;
+                 border: none;
+             }
+
+             .Leaderbord_info {
+                 position: absolute;
+                 padding-bottom: 20px;
+                 margin-top: -75px;
+             }
+
+
+             .Fancy_looking_button {
+                 background: url("https://www.aioneotp.com/assets/images/leaderboards_button.png") no-repeat;
+                 background-size: contain;
+                 width: 317px;
+                 height: 85px;
+                 border: none;
+                 outline: 0;
+                 padding-bottom: 11px;
+                 margin-bottom: 0px;
+                 color: #f6ffae;
+                 font-size: 2em;
+                 font-family: ferrum;
+                 color: #dcc5a5;
+                 cursor: pointer;
+             }
+
+             .Fancy_looking_button:hover {
+                 background: url("https://www.aioneotp.com/assets/images/leaderboards_button_hover.png") no-repeat;
+                 background-size: contain;
+                 width: 317px;
+                 height: 85px;
+                 cursor: pointer;
+             }
+
+
+             .Fancy_looking_button:active {
+                 background: url("https://www.aioneotp.com/assets/images/leaderboards_button_clicked.png") no-repeat;
+                 background-size: contain;
+                 width: 317px;
+                 height: 85px;
+             }
+
+
+
+
+             .login_form {
+                 margin-top: -8px;
+                 position: absolute;
+                 width: auto;
+             }
+
+
+             input {
+                 width: 200px;
+                 height: 30px;
+                 background: url("https://www.aioneotp.com/assets/images/type_field.png");
+                 background-size: cover;
+                 color: #dcc5a5;
+                 border: 0;
+                 text-align: center;
+                 margin-bottom: 5px;
+             }
+
+             .username_login {
+                 margin-bottom: 10px;
+                 color: #dcc5a5;
+                 width: 250px;
+                 height: 20px;
+                 text-align: center;
+             }
+
+             .username_password {
+                 margin-bottom: 10px;
+                 color: #dcc5a5;
+                 width: 250px;
+                 height: 20px;
+                 text-align: center;
+
+             }
+
+
+             .Username_text {
+                 position: absolute;
+                 margin-left: 57px;
+                 margin-top: 85px;
+                 color: #dcc5a5;
+             }
+
+
+             .Password_text {
+                 position: absolute;
+                 margin-left: 60px;
+                 margin-top: 114px;
+                 color: #dcc5a5;
+             }
+
+             .game_description {
+                 width: 500px;
+                 color: #dcc5a5;
+                 text-align: center;
+                 font-family: vera;
+                 margin-top: 0px;
+                 font-size: 15px;
+                 margin-bottom: 8px;
+             }
+
+             .game_logo {
+                 background-size: contain;
+                 width: 128px;
+                 height: auto;
+             }
+
+             .secondary_cool_ass_window {
+
+                 flex-direction: column;
+                 align-items: center;
+                 margin-left: 4px;
+                 margin-top: -15px;
+                 text-align: center;
+                 display: -webkit-box;
+                 display: -moz-box;
+                 display: box;
+                 display: -webkit-flex;
+                 display: -moz-flex;
+                 display: -ms-flexbox;
+                 display: flex;
+             }
+
+             .secondary_cool_ass_window img {
+                 text-align: center;
+             }
+
+
+             .one3 {
+                 height: auto;
+                 width: 600px;
+             }
+
+             .two3 {
+                 height: auto;
+                 width: 600px;
+             }
+
+             .three3 {
+                 height: 680px;
+                 width: 987px;
+             }
+
+             .three4 {
+                 height: 2050px;
+                 width: 987px;
+             }
+
+             .three5 {
+                 height: 1000px;
+                 width: 987px;
+             }
+
+
+             .secondary_cool_ass_info {
+                 position: absolute;
+                 color: #dcc5a5;
+                 display: inline-block;
+                 flex-direction: column;
+                 justify-content: center;
+                 text-align: center;
+                 margin-left: auto;
+                 margin-right: auto;
+                 left: 0;
+                 right: 0;
+             }
+
+             .secondary_cool_ass_info2 {
+                 position: absolute;
+                 color: #dcc5a5;
+                 display: inline-block;
+                 flex-direction: column;
+                 justify-content: center;
+                 text-align: center;
+                 min-width: 700px;
+                 max-width: 700px;
+                 margin-left: auto;
+                 margin-right: auto;
+                 left: 0;
+                 right: 0;
+                 overflow: wrap;
+             }
+
+             .secondary_cool_ass_info3 {
+                 position: absolute;
+                 color: #dcc5a5;
+                 display: inline-block;
+                 flex-direction: column;
+                 justify-content: center;
+                 text-align: center;
+                 min-width: 800px;
+                 max-width: 800px;
+                 margin-left: auto;
+                 margin-right: auto;
+                 overflow: wrap;
+                 left: 0;
+                 right: 0;
+             }
+
+             .secondary_cool_ass_info5 {
+                 position: absolute;
+                 color: #dcc5a5;
+                 display: inline-block;
+                 flex-direction: column;
+                 justify-content: center;
+                 text-align: center;
+                 width: 950px;
+
+                 margin-left: auto;
+                 margin-right: auto;
+                 overflow: wrap;
+                 left: 0;
+                 right: 0;
+             }
+
+             .secondary_cool_ass_info4 {
+                 color: #dcc5a5;
+                 display: inline-block;
+                 text-align: center;
+             }
+
+             .big {
+                 font-size: 30px;
+                 font-family: ferrum;
+                 color: #dcc5a5;
+             }
+
+             .small {
+                 font-family: vera;
+                 font-size: 15px;
+                 color: #dcc5a5;
+             }
+
+             .small2 {
+                 font-family: vera;
+                 font-size: 15px;
+                 color: #dcc5a5;
+                 max-width: 700px;
+             }
+
+             .button_container {
+                 display: fixed;
+                 flex-direction: column;
+                 justify-content: center;
+             }
+
+             .download_button {
+                 background: url("https://www.aioneotp.com/assets/images/download_button.png") no-repeat;
+                 background-size: contain;
+                 width: 270px;
+                 height: 35px;
+                 color: #9affb9;
+                 border: 0px;
+                 outline: 0px;
+             }
+
+             .download_button:hover {
+                 background: url("https://www.aioneotp.com/assets/images/download_button_hover.png") no-repeat;
+                 background-size: contain;
+                 width: 270px;
+                 height: 35px;
+                 color: #dcc5a5;
+                 border: 0px;
+                 outline: 0px;
+             }
+
+             .download_button:active {
+                 background: url("https://www.aioneotp.com/assets/images/download_button_clicked.png") no-repeat;
+                 background-size: contain;
+                 width: 270px;
+                 height: 35px;
+                 border: 0px;
+                 color: #dcc5a5;
+                 outline: 0px;
+             }
+
+             .big_ass_login_thingy {
+                 position: absolute;
+                 text-align: center;
+                 color: #dcc5a5;
+                 margin-left: auto;
+                 margin-right: auto;
+                 left: 0;
+                 right: 0;
+             }
+
+             .register_form {
+                 width: 250px;
+                 background-color: rgba(49, 39, 44, 0.6);
+                 padding: 30px;
+                 border: 3px;
+                 border-color: #dcc5a5;
+                 border-style: solid;
+                 border-radius: 10px
+             }
+
+
+             }
+
+             .box_field {
+                 display: flex;
+                 flex-direction: column;
+                 flex-wrap: nowrap;
+                 justify-content: center;
+
+             }
+
+             .Registeration_input {
+                 width: 180px;
+                 margin-top: 20px;
+                 margin-left: 40px;
+             }
+
+
+             .login_register {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/login_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+             }
+
+             .login_register:hover {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .login_register:active {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+
+
+             .submit_register {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/register_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 20px;
+                 margin-left: -35px;
+                 color: #9affb9;
+             }
+
+             .submit_register:hover {
+                 background: url(https://www.aioneotp.com/assets/images/register_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .submit_register:active {
+                 background: url(https://www.aioneotp.com/assets/images/register_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .submit_button {
+                 height: 35px;
+                 border: none;
+
+                 text-align: left;
+                 padding-left: 50px;
+                 background: url(https://www.aioneotp.com/assets/images/login_button2.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 color: #9affb9;
+             }
+
+             .submit_button:hover {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_hover2.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+
+             .submit_button:active {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_clicked2.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .register_form_form {
+                 display: flex;
+                 flex-direction: column;
+                 width: 200px;
+             }
+
+             .login_input {
+                 width: 180px;
+                 margin-top: 20px;
+                 margin-left: 40px;
+             }
+
+             .login_form_input {
+                 margin-right: 75px;
+             }
+
+             .enter_button {
+                 background: url(https://www.aioneotp.com/assets/images/login_button.png) no-repeat;
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+                 margin-left: 72px;
+             }
+
+             .enter_button:hover {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_hover.png) no-repeat;
+                 background-size: contain;
+             }
+
+             .enter_button:active {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_clicked.png) no-repeat;
+                 background-size: contain;
+             }
+
+             .flux4 {
+                 background: url("https://www.aioneotp.com/assets/images/account_interface_blank.png") no-repeat;
+                 background-size: 100%;
+                 width: 325px;
+             }
+
+             /*  .flux4_asmo {
+             background: url("https://www.aioneotp.com/assets/images/account_interface_asmo.png") no-repeat;
+             background-size: 100%;
+             width: 325px;
+         }
+
+         .flux4_ely {
+             background: url("https://www.aioneotp.com/assets/images/account_interface_elyos.png") no-repeat;
+             background-size: 100%;
+             width: 325px;
+         }
+*/
+             .icon {
+                 width: 45px;
+                 height: 45px;
+                 margin-left: -250px;
+                 background: url("https://www.aioneotp.com/assets/images/icons/logo_race_none.png") no-repeat;
+                 background-size: contain;
+                 display: inline-block;
+                 margin-top: 15px;
+                 content: url("https://www.aioneotp.com/assets/images/icons/icon_emblem_.png");
+             }
+
+             .icon_ely {
+                 background: url("https://www.aioneotp.com/assets/images/icons/logo_race_none.png") no-repeat;
+                 width: 45px;
+                 height: 45px;
+                 margin-left: -250px;
+                 background-size: contain;
+                 display: inline-block;
+                 margin-top: 15px;
+                 content: url("https://www.aioneotp.com/assets/images/icons/icon_emblem_.png");
+             }
+
+             .icon_asmo {
+                 background: url("https://www.aioneotp.com/assets/images/icons/logo_race_none.png") no-repeat;
+                 width: 45px;
+                 height: 45px;
+                 margin-left: -250px;
+                 background-size: contain;
+                 display: inline-block;
+                 margin-top: 15px;
+                 padding-bottom: 0px;
+                 content: url("https://www.aioneotp.com/assets/images/icons/icon_emblem_.png");
+             }
+
+             .loggedin_username {
+                 position: absolute;
+                 margin-left: 65px;
+                 text-align: center;
+                 margin-top: 6px;
+                 white-space: nowrap;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 width: 240px;
+             }
+
+             .loggedin_buttons {}
+
+             .thingy_that_fixes_all_problems {
+                 width: 100px;
+                 padding-top: 10px;
+             }
+
+             .character_field_background {
+                 width: 300px;
+                 height: 30px;
+                 margin-left: 10px;
+                 margin-top: 20px;
+                 background: url("https://www.aioneotp.com/assets/images/character_field.png") no-repeat;
+                 background-size: cover;
+                 color: #dcc5a5;
+                 display: flex;
+
+
+             }
+
+             .emblem {
+                 height: 30px;
+                 width: 30px;
+             }
+
+
+
+             .Character_00 {
+                 position: absolute;
+                 margin-left: 40px;
+                 margin-top: 7px;
+                 font-family: vera;
+                 font-size: 14px;
+             }
+
+             .character_field_background_0 {
+                 width: 300px;
+                 height: 30px;
+                 margin-left: 10px;
+                 background: url("https://www.aioneotp.com/assets/images/character_field.png") no-repeat;
+                 background-size: cover;
+                 color: #dcc5a5;
+             }
+
+
+             .settings {
+                 background: url(https://www.aioneotp.com/assets/images/download_button.png) no-repeat;
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+             }
+
+             .settings:hover {
+                 background: url(https://www.aioneotp.com/assets/images/download_button_hover.png) no-repeat;
+                 background-size: contain;
+             }
+
+             .settings:active {
+                 background: url(https://www.aioneotp.com/assets/images/download_button_clicked.png) no-repeat;
+                 background-size: contain;
+             }
+
+
+             .logout {
+                 background: url(https://www.aioneotp.com/assets/images/logout_button.png) no-repeat;
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 40px;
+                 color: #9affb9;
+                 margin-bottom: 30px;
+             }
+
+             .logout:hover {
+                 background: url(https://www.aioneotp.com/assets/images/logout_button_hover.png) no-repeat;
+                 background-size: contain;
+             }
+
+             .logout:active {
+                 background: url(https://www.aioneotp.com/assets/images/logout_button_clicked.png) no-repeat;
+                 background-size: contain;
+             }
+
+             .stacking_shit {
+                 display: fixed;
+                 justify-content: center;
+             }
+
+             .wrong_password_error {
+                 margin-top: -13px;
+                 font-family: vera;
+                 font-size: 13px;
+                 color: #dcc5a5;
+                 margin-left: 20px;
+             }
+
+             .Account_creation_message {
+                 position: absolute;
+                 display: fixed;
+             }
+
+             .wrongCapcha {
+                 font-family: vera;
+                 font-size: 13px;
+                 color: #dcc5a5;
+             }
+
+             #wrongDetail {
+                 font-family: vera;
+                 font-size: 13px;
+                 color: #dcc5a5;
+             }
+
+             .nomatch {
+                 font-family: vera;
+                 font-size: 13px;
+                 color: #dcc5a5;
+             }
+
+
+             .explaination_big2 {
+                 width: 700px;
+             }
+
+             .Facebook {
+                 height: 100px;
+                 width: 400px;
+                 background: #3b5998;
+                 color: #FFFFFF;
+                 font-size: 75px;
+                 font-family: Klavika;
+                 border: 0px;
+                 outline: 0px;
+             }
+
+
+             .Facebook:hover {
+                 background: #dfe3ee;
+                 color: #000000;
+             }
+
+             .Facebook:active {
+                 background: #8b9dc3;
+                 color: #000000;
+             }
+
+
+
+             .support_button {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/settings_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+             }
+
+             .support_button:hover {
+                 background: url(https://www.aioneotp.com/assets/images/settings_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .support_button:active {
+                 background: url(https://www.aioneotp.com/assets/images/settings_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+
+             .support_back_button {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/logout_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+             }
+
+             .support_back_button:hover {
+                 background: url(https://www.aioneotp.com/assets/images/logout_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .support_back_button:active {
+                 background: url(https://www.aioneotp.com/assets/images/logout_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+
+             .support_back_button2 {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/logout_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+             }
+
+             .support_back_button2:hover {
+                 background: url(https://www.aioneotp.com/assets/images/logout_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .support_back_button2:active {
+                 background: url(https://www.aioneotp.com/assets/images/logout_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .report_description_02 {
+                 width: 250px;
+                 height: 25px;
+                 margin-top: 20px;
+             }
+
+             .report_description_00 {
+                 width: 250px;
+                 height: 25px;
+                 margin-top: 20px;
+             }
+
+             #longDesc {
+                 width: 500px;
+                 height: 200px;
+                 background-color: #333030;
+                 background-size: cover;
+                 color: #dcc5a5;
+                 font-family: vera;
+                 font-size: 15px;
+                 resize: none;
+                 margin-top: 60px;
+             }
+
+
+             .submit_ticket:hover {
+                 background: url(https://www.aioneotp.com/assets/images/register_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .submit_ticket:active {
+                 background: url(https://www.aioneotp.com/assets/images/register_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .submit_ticket:disabled {
+                 background: url(https://www.aioneotp.com/assets/images/red_button_broken.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .submit_ticket {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/register_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+                 margin-top: 40px;
+             }
+
+
+
+
+
+
+             label {
+                 margin-right: 50px;
+             }
+
+             .label_big {
+                 position: absolute;
+                 margin-top: 30px;
+             }
+
+
+
+
+
+             .bug_reports:active {
+                 background: url(https://www.aioneotp.com/assets/images/register_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .bug_reports:disabled {
+                 background: url(https://www.aioneotp.com/assets/images/red_button_broken.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .bug_reports {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/register_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+                 margin-top: 40px;
+             }
+
+
+             .top_table {
+                 height: 40px;
+                 background-color: #4c3030;
+                 width: 30px;
+                 color: #dcc5a5;
+                 border: 0px;
+                 font-size: 20px;
+                 font-weight: bold;
+             }
+
+
+             .time_table {
+                 height: 100px;
+                 display: fixed;
+             }
+
+
+
+             .empty_cell {
+                 height: 40px;
+                 border: 0px;
+                 background-color: #170f0f;
+                 color: #dcc5a5;
+             }
+
+             .filled_table {
+                 height: 50px;
+                 border: 0px;
+                 background-color: #170f0f;
+                 color: #dcc5a5;
+             }
+
+             .time_table_color {
+                 height: 60px;
+                 background-color: #4c3030;
+                 width: 30px;
+                 color: #dcc5a5;
+                 border: 0px;
+                 font-size: 20px;
+                 font-weight: bold;
+             }
+
+
+             .prevent_overflow_extreme {
+                 /*  overflow-y: scroll;*/
+                 height: 2000px;
+             }
+
+
+
+
+
+             .prevent_overflow_extreme2 {
+                 /*   overflow: scroll;*/
+             }
+
+             table {
+                 border-spacing: 0px;
+             }
+
+             .top_table_draft {
+                 height: 40px;
+                 background-color: #4c3030;
+                 width: 30px;
+                 color: #dcc5a5;
+                 border: 0px;
+             }
+
+             .race_draft {
+                 height: 50px;
+                 border: 0px;
+                 background-color: #170f0f;
+                 color: #dcc5a5;
+                 width: 16.8%;
+             }
+
+             .player_draft {
+
+                 height: 50px;
+                 border: 0px;
+                 background-color: #170f0f;
+                 color: #dcc5a5;
+                 width: 16.8%;
+             }
+
+
+             .date_draft {
+
+                 width: 160px;
+                 border: 0px;
+                 background-color: #170f0f;
+                 color: #dcc5a5;
+             }
+
+
+             .skill_draft {
+
+                 width: 120px;
+                 background-color: #170f0f;
+                 border: 0px;
+                 color: #dcc5a5;
+                 width: 20.8%;
+             }
+
+             .value_draft {
+                 color: #dcc5a5;
+                 background-color: #170f0f;
+                 width: 100px;
+                 border: 0px;
+                 width: 17%;
+             }
+
+             th:hover {
+                 background-color: #563737;
+             }
+
+             .news_image {
+                 background-image: url("https://www.aioneotp.com/assets/images/tiamat.png");
+                 background-size: contain;
+                 height: 250px;
+                 width: 250px;
+                 background-repeat: no-repeat;
+             }
+
+             .papyrus_div {
+                 background-image: url("https://www.aioneotp.com/assets/images/papyrus_field_down.png");
+                 background-repeat: no-repeat;
+                 background-size: contain;
+                 width: 320px;
+                 margin-top: 10px;
+                 height: 200px;
+             }
+
+
+
+             .login_tests {
+                 width: 270px;
+                 border: none;
+                 height: 35px;
+                 padding: 2px 8px;
+                 background: url(https://www.aioneotp.com/assets/images/login_button.png) no-repeat;
+                 background-size: contain;
+                 outline: 0;
+                 margin-top: 2px;
+                 color: #9affb9;
+             }
+
+             .login_tests:hover {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_hover.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+             .login_tests:active {
+                 background: url(https://www.aioneotp.com/assets/images/login_button_clicked.png) no-repeat;
+                 color: #f6ffae;
+                 background-size: contain;
+             }
+
+
+
+             .papyrus_test_close {
+                 background: url("https://www.aioneotp.com/assets/images/papyrus_field_up_button.png") no-repeat;
+                 background-size: contain;
+                 width: 330px;
+                 height: 70px;
+                 outline: 0;
+                 margin-right: 20px;
+                 border: none;
+             }
+
+
+             .papyrus_test_close:hover {
+                 background: url("https://www.aioneotp.com/assets/images/papyrus_field_up_button_hover.png") no-repeat;
+                 background-size: contain;
+                 width: 330px;
+                 height: 70px;
+                 outline: 0;
+                 margin-right: 20px;
+                 border: none;
+             }
+
+             .Login_details2 {
+                 height: 100px;
+                 width: 280px;
+             }
+
+             .block2 {
+                 display: inline-block;
+                 width: auto;
+                 text-align: right;
+                 color: #dcc5a5;
+                 font-family: vera;
+                 font-size: 15px;
+                 margin-right: 35px;
+             }
+
+             .pass_div {
+                 margin-left: 5px;
+             }
+
+             .game_description_div {
+                 height: 500px;
+                 overflow-y: scroll;
+                 left: 0;
+                 right: 0;
+             }
+
+
+
+             .inside_box_container::-webkit-scrollbar {
+                 display: none;
+             }
+
+             .prevent_overflow_extreme::-webkit-scrollbar {
+                 display: none;
+             }
+
+             .prevent_overflow_extreme2::-webkit-scrollbar {
+                 display: none;
+             }
+
+             ::-moz-scrollbar {
+                 display: none;
+             }
+
+
+             .news_picture {
+                 background-image: url("https://www.aioneotp.com/assets/images/tiamat.png");
+                 background-size: contain;
+                 background-repeat: no-repeat;
+             }
+
+             .Picture {
+                 width: 250px;
+             }
+
+             .news_text {
+                 max-width: 10px;
+                 text-align: left;
+                 vertical-align: top;
+                 overflow: hidden;
+                 max-height: 200px;
+             }
+
+             .on_progress {
+                 background-color: #d1d161;
+                 color: #000000;
+             }
+
+             .status_table {
+                 width: 100px;
+             }
+
+             .Fixed {
+                 background-color: #61d164;
+                 color: #000000;
+             }
+
+             .dev_cell {
+                 width: 100px;
+             }
+
+             .not_planned {
+                 background-color: #d16161;
+                 color: #000000;
+             }
+
+             .Date_cell {
+                 width: 100px;
+             }
+
+             .Explaination_text {
+                 text-align: left;
+                 vertical-align: top;
+             }
+
+             .mid_three2 {
+                 background-image: url("https://www.aioneotp.com/assets/images/2-mid.png");
+                 background-repeat: no-repeat;
+                 height: 230px;
+                 width: 317px;
+                 background-size: 317px 230px;
+                 overflow: hide;
+             }
+
+             .discord_button {
+                 background: url("https://www.aioneotp.com/assets/images/Discord_button.png");
+                 width: 50px;
+                 height: 50px;
+                 outline: 0;
+                 background-repeat: no-repeat;
+                 background-size: contain;
+                 border: none;
+                 margin-right: 10px;
+             }
+
+             .discord_button:hover {
+                 background: url("https://www.aioneotp.com/assets/images/Discord_button_clicked.png");
+                 width: 50px;
+                 height: 50px;
+                 outline: 0;
+                 background-repeat: no-repeat;
+                 background-size: contain;
+                 border: none;
+             }
+
+             .discord_button:active {
+                 background: url("https://www.aioneotp.com/assets/images/Discord_button_clicked.png");
+                 width: 50px;
+                 height: 50px;
+                 outline: 0;
+                 background-repeat: no-repeat;
+                 background-size: contain;
+                 border: none;
+             }
+
+             .facebook_button {
+                 width: 50px;
+                 height: 50px;
+                 background: url("assets/images/flogo_RGB_HEX-512.png");
+
+
+                 border: 0px;
+                 outline: 0px;
+                 background-size: contain;
+             }
+
+
+             .facebook_button:hover {
+                 background: url("https://www.aioneotp.com/assets/images/flogo-Hex-RGB-MedGrey-512.png");
+                 background-size: contain;
+             }
+
+             .facebook_button:active {
+                 background: url("https://www.aioneotp.com/assets/images/flogo-RGB-HEX-Blk-512.png");
+                 background-size: contain;
+             }
+
+             .social_div {
+                 display: flex;
+                 justify-content: center;
+             }
+
+             .sexy_text {
+                 text-align: center;
+                 margin-top: -10px;
+             }
+
+
+             .dropdown-content {
+                 display: none;
+                 position: absolute;
+                 background-color: #f1f1f1;
+                 min-width: 160px;
+                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                 z-index: 1;
+             }
+
+             .dropdown-content a {
+                 color: black;
+                 padding: 12px 16px;
+                 text-decoration: none;
+                 display: block;
+             }
+
+             .dropdown-content a:hover {
+                 background-color: #ddd;
+             }
+
+             .overlay_button {
+                 position: relative;
+                 display: inline-block;
+             }
+
+             .special_block {
+                 display: inline-flex;
+                 width: auto;
+                 flex-direction: row;
+             }
+
+             .dropdown_text {
+                 text-shadow: 0px 0px #000000;
+
+                 margin-right: 45px;
+                 margin-top: 25px;
+             }
+
+             .custom-select {
+                 width: 249px;
+                 height: 30px;
+                 background-color: #333030;
+                 color: #dcc5a5;
+                 font-family: vera;
+                 font-size: 15px;
+                 display: inline-block;
+                 margin-top: 20px;
+             }
+
+             .select_problem {
+                 margin-top: 25px;
+             }
+
+
+             .privacy_mid_div {
+                 height: 2250px;
+                 width: 987px;
+             }
+
+             .link_link {
+                 color: #d6ca28;
+                 text-shadow: 0px 0px #000000;
+             }
+
+             .link_link:active {
+                 color: #d68d28;
+                 text-shadow: 0px 0px #000000;
+             }
+
+             .line_line {
+                 color: #dcc5a5;
+             }
+
+
+             .admin_status {
+
+                 border: 0;
+             }
+
+             .linky {
+                 height: 40px;
+                 width: 150px;
+                 background-color: #c4c4c4;
+                 padding-top: 20px;
+             }
+
+             .linky:hover {
+                 background-color: #878787;
+             }
+
+
+
+             .linky2 {
+                 height: 40px;
+                 width: 150px;
+                 background-color: #c4c4c4;
+                 padding-top: 20px;
+                 padding-bottom: 20px;
+                 padding-right: 10px;
+                 padding-left: 10px;
+             }
+
+             .linky2:hover {
+                 background-color: #878787;
+             }
+
+
+
+
+
+             .admin_status_table {
+
+                 min-height: 50px;
+                 width: 200px;
+             }
+
+             .sexycolor:hover {
+                 color: #e56510;
+                 cursor: pointer;
+             }
+
+             .admin_issue_type {
+                 background-color: #FFFFFF;
+                 border: 0;
+
+                 color: #000000;
+             }
+
+             .admin_name {
+                 background-color: #FFFFFF;
+                 border: 0;
+                 color: #000000;
+             }
+
+             .admin_discord_name {
+                 background-color: #FFFFFF;
+                 border: 0;
+                 color: #000000;
+             }
+
+             .admin_short {
+                 background-color: #FFFFFF;
+                 border: 0;
+                 color: #000000;
+             }
+
+             .admin_long {
+                 background-color: #FFFFFF;
+                 border: 0;
+                 height: 100px;
+                 color: #000000;
+                 margin: 5px;
+                 text-align: left;
+                 vertical-align: top;
+             }
+
+             .admin_time {
+
+                 background-color: #FFFFFF;
+                 color: #000000;
+                 border: 0;
+             }
+
+             .boop_up {}
+
+             table {
+                 /*   border-collapse: sep;*/
+                 width: 100%;
+             }
+
+
+
+             .dropdown_div {}
+
+             .news_menu {
+                 display: none;
+             }
+
+             .NEWS:hover body {
+                 background-color: #FFFFFF;
+             }
+
+
+             .dropped_button {
+                 background-image: url("https://www.aioneotp.com/assets/images/sub_button2.png");
+                 color: #dcc5a5;
+                 background-repeat: no-repeat;
+                 background-size: 100%;
+                 width: 175px;
+                 height: 50px;
+                 margin-left: 13px;
+                 text-align: center;
+                 vertical-align: middle;
+                 margin-top: 2px;
+                 cursor: pointer;
+                 user-select: none;
+                 padding-top: 10px;
+                 font-size: 26px;
+                 font-family: ferrum;
+             }
+
+
+             .dropped_button:hover {
+                 background-image: url("https://www.aioneotp.com/assets/images/sub_button2_hover.png");
+                 color: #dcc5a5;
+             }
+
+             .dropped_button:active {
+                 background-image: url("https://www.aioneotp.com/assets/images/sub_button2_pressed.png");
+                 color: #353535;
+             }
+
+             .Date_cell {
+                 width: 200px;
+             }
+
+             .prevent_overflow_extreme2 {
+                 background: #e2e2e2;
+                 padding-top: 30px;
+                 width: 1500px;
+                 padding-right: -20px;
+                 padding-left: -20px;
+             }
+
+             .Styled_top {
+                 height: 60px;
+                 color: #000000;
+                 border: 0;
+             }
+
+             .draft_table2 {
+                 /*display: fixed;*/
+             }
+
+
+
+
+
+
+             .ticket_top_name {
+                 background-color: #c29a9a;
+                 width: 90%;
+                 height: 40px;
+                 display: table;
+                 justify-content: center;
+                 margin-left: 35px;
+                 font-size: 23px;
+                 padding-top: 20px;
+                 color: #FFFFFF;
+             }
+
+
+
+
+             .flexo {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 70px;
+                 margin-right: 70px;
+                 background-color: #FFFFFF;
+                 color: #000000;
+                 margin-bottom: 30px;
+                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                 overflow: hidden;
+                 font-size: 16px;
+             }
+
+             .flexo:hover {
+                 box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+             }
+
+
+
+             .ticket_button {
+                 width: 170px;
+                 height: 50px;
+                 text-shadow: 0px 0px;
+                 font-size: 20px;
+             }
+
+
+
+
+
+             .leaderboards_text {
+                 margin-left: 10px;
+                 margin-right: 50px;
+                 color: #000000;
+                 font-size: 20px;
+             }
+
+             .leaderboards_top {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+                 overflow: hidden;
+             }
+
+             .description_tickets {
+                 text-align: left;
+                 margin-left: 20px;
+                 max-width: 600px;
+                 word-wrap: break-word;
+             }
+
+
+             .race {
+                 width: 16.8%;
+             }
+
+             .player {
+                 width: 16.8%;
+             }
+
+             .skill {
+                 width: 20.8%;
+             }
+
+             .reached {
+                 width: 17%;
+             }
+
+             .Saturday {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+             }
+
+             .Sunday {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+             }
+
+             .Monday {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+             }
+
+             .Tuesday {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+             }
+
+             .Wednesday {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+             }
+
+             .Thursday {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+             }
+
+             .Friday {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+             }
+
+             .date_card {
+                 width: 200px;
+                 margin: 20px;
+                 min-height: 200px;
+                 background-color: rgba(66, 10, 10, 0.9);
+                 position: relative;
+                 transition: all 0.9s cubic-bezier(.25, .8, .25, 1);
+                 -webkit-transition: all 0.9s cubic-bezier(.25, .8, .25, 1);
+             }
+
+             .date_card:hover {
+                 background: url(../../assets/images/background_000.jpg) no-repeat fixed center;
+             }
+
+             .cool_list {
+                 text-align: left;
+             }
+
+             .cool_list:hover {
+                 background: rgba(0, 0, 0, 0.8);
+             }
+
+             .time {
+                 background: rgba(0, 0, 0, 0.8);
+             }
+
+             .time_text {
+                 font-size: 27px;
+             }
+
+             .countdown {
+                 bottom: 0%;
+                 position: absolute;
+                 bottom: 0;
+                 width: 100%;
+             }
+
+             .countdown:hover {
+                 background: rgba(0, 0, 0, 0.8);
+             }
+
+
+             .day_selector_button {
+                 text-shadow: 0px 0px;
+                 width: 150px;
+                 height: 50px;
+                 font-size: 16px;
+                 background-color: rgba(66, 10, 10, 0.9);
+                 border: 0;
+                 outline: 0;
+                 color: #dcc5a5;
+                 margin: 2px;
+             }
+
+             .day_selector_button:hover {
+                 background-color: #29c49a;
+                 color: #000000;
+             }
+
+             .day_selector_button:active {
+                 background-color: #218469;
+                 color: #000000;
+             }
+
+             .day_selector_button:disabled {
+                 background-color: #301410;
+             }
+
+             .day_selector_div {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+             }
+
+             .item_mother {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+             }
+
+             .item_div {
+
+                 width: 250px;
+                 margin: 5px;
+                 background-color: #4c3030;
+                 position: relative;
+                 min-height: 150px;
+             }
+
+             .item_name_image {
+                 display: flex;
+                 flex-direction: row;
+                 margin: 10px;
+                 align-items: center;
+             }
+
+             .item_price {
+                 background-color: #170f0f;
+                 width: 100%;
+
+                 align-items: center;
+             }
+
+             .item_id {
+                 background-color: #170f0f;
+                 width: 100%;
+                 position: absolute;
+                 bottom: 0;
+                 padding-top: 5px;
+             }
+
+             .item_name {
+                 margin-left: 10px;
+                 font-size: 20px;
+                 text-overflow: clip;
+                 max-width: 180px;
+                 max-height: 30px;
+                 overflow: hidden;
+                 border: 1px solid #000000;
+             }
+
+             .shop_button {
+                 text-shadow: 0px 0px;
+                 background-color: #170f0f;
+                 border: 0;
+                 width: 100%;
+                 height: 30px;
+                 outline: 0;
+                 position: absolute;
+                 bottom: 0%;
+                 color: #dcc5a5;
+                 left: 0;
+             }
+
+
+
+             .character_select {
+                 text-shadow: 0px 0px;
+                 width: 150px;
+                 height: 30px;
+                 padding: 0;
+                 margin: 0;
+                 background-color: white;
+
+                 color: black;
+                 outline: 0;
+                 cursor: pointer;
+             }
+
+             .character_select:hover {
+                 background-color: #2196F3;
+                 color: white;
+             }
+
+
+             .character_list {
+                 width: 200px;
+                 display: flex;
+                 flex-direction: column;
+                 position: absolute;
+                 right: 0;
+                 margin-right: 20px;
+             }
+
+             .character_list_buttons {
+
+                 display: flex;
+                 flex-direction: column;
+             }
+
+             .custom_drop_down_menu {}
+
+             .character_name_0 {
+
+                 display: block;
+                 height: 50px;
+                 margin-top: 20px;
+             }
+
+             .character_buttons {
+                 border: 0;
+                 outline: 0;
+                 background: 0;
+                 color: #dcc5a5;
+                 font-size: 22px;
+             }
+
+             .character_buttons:hover {
+                 background-color: #d6d1d1;
+                 color: #514f4f;
+             }
+
+             .character_buttons:active {
+                 background-color: #f7f2f2;
+                 color: #514f4f;
+             }
+
+             .kinah_image {
+                 width: 30px;
+                 height: 30px;
+                 margin-top: 37px;
+             }
+
+             .character_list {
+                 background-color: #4c3030;
+             }
+
+             .kinah_div {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+             }
+
+             .sexy_container2 {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+                 flex-wrap: wrap;
+             }
+
+             @media only screen and (max-width: 1024px) {
+                 .sexy_container2 {
+
+                     flex-direction: column-reverse;
+                 }
+             }
+
+             @media only screen and (max-width: 800px) {
+                 body {
+                     background-color: lightblue;
+                 }
+
+                 .logo_div {
+                     height: 85px;
+                     width: 300px;
+                 }
+
+                 .butt {}
+
+                 .game_logo {
+                     width: 128px;
+                 }
+
+                 .dropped_button {
+                     display: none;
+                 }
+
+
+
+                 .big_window {
+                     width: 300px;
+                 }
+
+                 .help_container {
+                     flex-flow: column;
+                     width: auto;
+
+                 }
+
+                 .support_container {
+                     width: 300px;
+                 }
+
+                 .menu_buttons {
+                     justify-content: normal;
+                     overflow-x: scroll;
+                     height: 80px;
+
+                 }
+
+                 .overflow_changelog2 {
+                     width: 90%;
+                     margin: 0;
+
+                 }
+
+                 .desktop {
+                     display: none;
+                 }
+
+                 .features_container {
+                     flex-direction: column;
+                 }
+
+                 .mobile_resize {
+                     transform: scale(0.7);
+
+                 }
+
+                 .mobile_picture_margin {
+                     margin-left: -80px;
+                 }
+
+                 .features_parent {
+                     flex-direction: column;
+                     width: auto;
+                 }
+
+                 .explaination_command {
+                     width: auto;
+                 }
+
+                 .news {
+                     flex-direction: column-reverse;
+                 }
+             }

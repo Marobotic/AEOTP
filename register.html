@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <!-- Title -->
+    <title>Aion: 3.9 Echoes Of The Past</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/465318855783219201/485223707602714626/aeotp_logo_basic_v3.png">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/strings.js"></script>
+    <script src="assets/js/csi.min.js"></script>
+    <!-- Phone support code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metas -->
+    <meta property="og:title" content="Aion 3.9: Echoes Of The Past">
+    <meta property="og:description" name="description" content="Aion 3.9: Echoes of the past is a private server, dedicated to highlight the best parts of Aion. We believe that if this game has been handled with more care, it would have become far more enjoyable, far more addictive and even further more meaningful! The old…RENEWED!
+        Be the Hero to earn your wings and conquer Atreia, as this server allows you to experience full-content of the game. The game allows you to unfold your inner interests as this server’s goal is appealling to many types of different players">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/484327756080087050/488784562630033416/AEOP_fb_cover.png">
+    <meta property="og:url" content="https://www.aioneotp.com/">
+</head>
+
+<body>
+    <button class="error ode characters_button">Aion 3.9: Echoes Of The Past </button>
+    <div data-include="modules/navigation.html"></div>
+    <div data-include="modules/sidebuttons.html"></div>
+    <button class="error ode characters_button">Register </button>
+     <p> This site is a preview; registeration is disabled </p>
+<div class="register_form animate">
+<form class="register_form_form animate" name="frm_cadastro" id="frm_cadastro" method="post" action="<?php echo $this->form_action; ?>">
+    <input name="name" type="text" id="name" class="register_input" placeholder="Username" maxlength="24" />
+    <input name="email" type="email" id="email" class="register_input" placeholder="Email" />
+    <input name="password2" type="password" id="password2" class="register_input" placeholder="Password" maxlength="24"/>
+    <input name="password" type="password" id="password" class="register_input" placeholder="Confirm Password" maxlength="24"/>
+    <div>
+        <img src="img_captcha.php" width="200" height="60" alt="" style="display:none;" />
+    </div>
+    <input name="user_code" id="user_code" style="display:none;" type="text" class="captcha_remove" maxlength="5"  placeholder="(Leave Blank)" />
+    <div>
+        <label class="container">
+            <input style="width: 15px; height: 15px" type="checkbox" id="checkbox" onclick="Checking()"> I agree on the <a href="http://www.aioneotp.com/community_guidelines.php" target="_blank"> Community Guidelines </a> and <a href="http://www.aioneotp.com/privacy-policy.php" target="_blank">Privacy Policy </a>
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <button class="Button_UI submit_register" id="submit_register" disabled="true">Submit</button>
+</form>
+</div>
+</body>
+
+</html>

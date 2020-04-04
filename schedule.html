@@ -1,0 +1,499 @@
+<html>
+
+<head>
+    <!-- Title -->
+    <title>Aion: 3.9 Echoes Of The Past</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/465318855783219201/485223707602714626/aeotp_logo_basic_v3.png">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/strings.js"></script>
+    <script src="assets/js/csi.min.js"></script>
+     <script src="assets/js/schedule.js"></script>
+    <!-- Phone support code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metas -->
+    <meta property="og:title" content="Aion 3.9: Echoes Of The Past">
+    <meta property="og:description" name="description" content="Aion 3.9: Echoes of the past is a private server, dedicated to highlight the best parts of Aion. We believe that if this game has been handled with more care, it would have become far more enjoyable, far more addictive and even further more meaningful! The old…RENEWED!
+        Be the Hero to earn your wings and conquer Atreia, as this server allows you to experience full-content of the game. The game allows you to unfold your inner interests as this server’s goal is appealling to many types of different players">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/484327756080087050/488784562630033416/AEOP_fb_cover.png">
+    <meta property="og:url" content="https://www.aioneotp.com/">
+</head>
+
+<body>
+     <button class="error ode characters_button">Aion 3.9: Echoes Of The Past </button>
+    <div data-include="modules/navigation.html"></div>
+     <div data-include="modules/sidebuttons.html"></div>
+ <button class="error ode characters_button">Siege Schedule </button>
+ <p style="text-align: center;"> This site is a preview </p>
+ <script>
+        // Go to line 67 to add new timers
+
+        function Data(t_hour, t_min, t_sec, dy, id) {
+
+            this.t_hour = t_hour;
+            this.t_sec = t_sec
+            this.t_min = t_min;
+            this.dy = dy;
+            this.id = id;
+            var curday;
+            var secTime;
+            var ticker;
+
+        }
+
+        function getSeconds(data) {
+            var nowDate = new Date();
+            var countertime = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), data.t_hour, data.t_min, data.t_sec); //20 out of 24 hours = 8pm
+            var curtime = nowDate.getTime(); //current time
+            var atime = countertime.getTime(); //countdown time
+            var diff = parseInt((atime - curtime) / 1000);
+            if (diff > 0) { data.curday = data.dy - nowDate.getDay() } else { data.curday = data.dy - nowDate.getDay() - 1 } //after countdown time
+            if (data.curday < 0) { data.curday += 7; } //already after countdown time, switch to next week
+            if (diff <= 0) { diff += (86400 * 7) }
+            startTimer(diff, data);
+  
+        }
+
+        function startTimer(secs, data) {
+            var ticker;
+            data.secTime = parseInt(secs);
+            data.ticker = setInterval(tick, 1000, data);
+            data.ticker = ticker;
+            tick(data); //initial count display
+        }
+
+        function tick(data) {
+            var secs = data.secTime;
+            if (secs > 0) {
+                data.secTime--;
+            } else {
+                clearInterval(data.ticker);
+                getSeconds(data); //start over
+            }
+
+            var days = Math.floor(secs / 86400);
+            secs %= 86400;
+            var hours = Math.floor(secs / 3600);
+            secs %= 3600;
+            var mins = Math.floor(secs / 60);
+            secs %= 60;
+
+            document.getElementById(data.id).innerHTML = data.curday + ":" + ((hours < 10) ? "0" : "") + hours + ":" + ((mins < 10) ? "0" : "") + mins + ":" + ((secs < 10) ? "0" : "") + secs;
+
+        }
+        </script>
+        <script>
+        $(document).ready(function() {
+
+            // Just like in the examples below params = (1)target hour (2)minutes (3)seconds (4) day from 0 to 6 (5) <p>id</>
+
+            getSeconds(new Data(10, 0, 0, 6, "saturday_10"));
+            getSeconds(new Data(11, 0, 0, 6, "saturday_11"));
+            getSeconds(new Data(18, 0, 0, 6, "saturday_18"));
+            getSeconds(new Data(21, 0, 0, 6, "saturday_21"));
+            getSeconds(new Data(22, 0, 0, 6, "saturday_22"));
+
+            getSeconds(new Data(10, 0, 0, 0, "sunday_10"));
+            getSeconds(new Data(11, 0, 0, 0, "sunday_11"));
+            getSeconds(new Data(18, 0, 0, 0, "sunday_18"));
+            getSeconds(new Data(21, 0, 0, 0, "sunday_21"));
+            getSeconds(new Data(22, 0, 0, 0, "sunday_22"));
+
+            getSeconds(new Data(12, 0, 0, 1, "monday_12"));
+            getSeconds(new Data(18, 0, 0, 1, "monday_18"));
+            getSeconds(new Data(21, 0, 0, 1, "monday_21"));
+            getSeconds(new Data(22, 0, 0, 1, "monday_22"));
+
+            getSeconds(new Data(12, 0, 0, 2, "tuesday_12"));
+            getSeconds(new Data(18, 0, 0, 2, "tuesday_18"));
+            getSeconds(new Data(21, 0, 0, 2, "tuesday_21"));
+            getSeconds(new Data(22, 0, 0, 2, "tuesday_22"));
+
+            getSeconds(new Data(12, 0, 0, 3, "wednesday_12"));
+            getSeconds(new Data(18, 0, 0, 3, "wednesday_18"));
+            getSeconds(new Data(21, 0, 0, 3, "wednesday_21"));
+            getSeconds(new Data(22, 0, 0, 3, "wednesday_22"));
+
+            getSeconds(new Data(12, 0, 0, 4, "thursday_12"));
+            getSeconds(new Data(18, 0, 0, 4, "thursday_18"));
+            getSeconds(new Data(22, 0, 0, 4, "thursday_22"));
+
+
+            getSeconds(new Data(12, 0, 0, 5, "friday_12"));
+            getSeconds(new Data(18, 0, 0, 5, "friday_18"));
+            getSeconds(new Data(22, 0, 0, 5, "friday_22"));
+
+        });
+        </script>
+
+<center> 
+        <div class="secondary_cool_ass_window">
+        
+            <div class="secondary_cool_ass_info2">
+                <p class="big ode error" id="today">Today</p>
+                <div class="day_selector_div">
+                    <button class="day_selector_button" id="Today">Today</button>
+                    <button class="day_selector_button" id="Monday">Monday</button>
+                    <button class="day_selector_button" id="Tuesday">Tuesday</button>
+                    <button class="day_selector_button" id="Wednesday">Wednesday</button>
+                    <button class="day_selector_button" id="Thursday">Thursday</button>
+                    <button class="day_selector_button" id="Friday">Friday</button>
+                    <button class="day_selector_button" id="Saturday">Saturday</button>
+                    <button class="day_selector_button" id="Sunday">Sunday</button>
+                </div>
+                <div class="overflow_changelog">
+                    <div class="Saturday">
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 10:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Arena</li>
+                                </ul>
+                                <p class="countdown" id="saturday_10">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 11:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Roah </li>
+                                    <li class="cool_list">Siel west </li>
+                                    <li class="cool_list">Siel east </li>
+                                    <li class="cool_list">Sulfur </li>
+                                </ul>
+                                <p class="countdown" id="saturday_11">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 18:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown" id="saturday_18">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 21:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Divine </li>
+                                </ul>
+                                <p class="countdown" id="saturday_21">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 22:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown" id="saturday_22">23:59:59</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Sunday">
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 10:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Arena </li>
+                                </ul>
+                                <p class="countdown" id="sunday_10">Over</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 11:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Krotan </li>
+                                    <li class="cool_list">Kysis </li>
+                                    <li class="cool_list">Miren </li>
+                                    <li class="cool_list">Asteria </li>
+                                </ul>
+                                <p class="countdown" id="sunday_11">Over</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 18:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown " id="sunday_18">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 21:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Vorgaltem Citadel </li>
+                                    <li class="cool_list">Crimson Temple</li>
+                                    <li class="cool_list">Altar of Avarice</li>
+                                    <li class="cool_list">Temple of Scales</li>
+                                </ul>
+                                <p class="countdown " id="sunday_21">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 22:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown " id="sunday_22">23:59:59</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Monday">
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 12:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Arena </li>
+                                </ul>
+                                <p class="countdown" id="monday_12">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 18:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                    <li class="cool_list">Arena</li>
+                                </ul>
+                                <p class="countdown" id="monday_18">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 21:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Vorgaltem Citadel </li>
+                                    <li class="cool_list">Altar of Avarice</li>
+                                </ul>
+                                <p class="countdown" id="monday_21">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 22:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown" id="monday_22">23:59:59</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Tuesday">
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 12:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Arena </li>
+                                </ul>
+                                <p class="countdown" id="tuesday_12">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 18:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                    <li class="cool_list">Arena</li>
+                                </ul>
+                                <p class="countdown" id="tuesday_18">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 21:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Crimson Temple</li>
+                                    <li class="cool_list">Temple of Scales</li>
+                                </ul>
+                                <p class="countdown" id="tuesday_21">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 22:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown" id="tuesday_22">23:59:59</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Wednesday">
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 12:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Arena </li>
+                                </ul>
+                                <p class="countdown" id="wednesday_12">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 18:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                    <li class="cool_list">Arena</li>
+                                </ul>
+                                <p class="countdown" id="wednesday_18">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 21:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Crimson Temple</li>
+                                    <li class="cool_list">Vorgaltem Citadel </li>
+                                    <li class="cool_list">Altar of Avarice</li>
+                                    <li class="cool_list">Temple of Scales</li>
+                                </ul>
+                                <p class="countdown" id="wednesday_21">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 22:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown" id="wednesday_22">23:59:59</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Thursday">
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 12:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Arena </li>
+                                </ul>
+                                <p class="countdown" id="thursday_12">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 18:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                    <li class="cool_list">Arena</li>
+                                </ul>
+                                <p class="countdown" id="thursday_18">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 22:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown" id="thursday_22">23:59:59</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Friday">
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 12:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Arena </li>
+                                </ul>
+                                <p class="countdown" id="friday_12">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 18:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                    <li class="cool_list">Arena</li>
+                                </ul>
+                                <p class="countdown" id="friday_18">23:59:59</p>
+                            </div>
+                        </div>
+                        <div class="date_card">
+                            <div class="time">
+                                <p class="time_text"> 22:00</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="cool_list">Tiamaranta</li>
+                                </ul>
+                                <p class="countdown" id="friday_22">23:59:59</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="small" id="today">All times are based on GTM +2 (Server time)</p>
+                    <!-- <button class="support_button Full_schedule">Full Schedule (broken)</button>  -->
+                </div>
+            </div>
+ 
+        </div>
+        </center>
+
+</body>
+
+</html>
