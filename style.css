@@ -1184,6 +1184,9 @@
        }
 
        @media only screen and (min-width:1070) {
+        .features_parent{
+          flex-direction: column;
+        }
            .sexy_container {
                display: flex;
 
